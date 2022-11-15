@@ -138,6 +138,7 @@ nav{
     height: 6rem;
     width: 50rem;
     padding: 5px 0 5px 50px;
+    /* padding: 0.1rem 0.1rem 0.1rem 5rem; */
     font-size: 2.1rem;
   }
   
@@ -145,9 +146,8 @@ nav{
     position: relative;
     right: 20.3rem;
     height: 5.2rem;
-    margin-top: 5px;
-    width: 160px;
-    font-size: 18px;
+    width: 16rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #fdfefe;
     background-color: #8bb7a2;
@@ -164,30 +164,151 @@ nav{
 
 .target-section{
     margin: 10rem 0rem;
+
 }
 
 
 
 
-.targetheader{
-    font-size: 4rem;
+.target-header, .career-header{
+    font-size: 6rem;
     display: flex;
     text-align: center;
     align-items: center;
-    width: 30%;
+    width: 50%;
     margin: 0rem  auto;
     margin-bottom: 5rem;
 }
 
 .target-numbers{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
+    margin: 0rem 15rem;
+    align-items: center;
+
+    
 }
 
 
-/* .target-numbers div h3 {
+.target-numbers div h3 {
+    font-size: 4.5rem;
+    text-align: center;
+}
 
-} */
+
+.target-numbers div p {
+    color: #667070;
+    font-size: 1.8rem;
+    font-weight: 600;
+    
+}
+
+.img-div{
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+}
+
+.target-video{
+    margin-top: 5rem;
+    height: 70rem;
+    object-fit: cover;
+}
 
 
-/* TARGET SRCTION ENDS */
+/* TARGET SECTION ENDS */
+
+
+/* CAREER SECTION BEGINS */
+
+.career-header{
+    width: 40%;
+}
+
+.career-sub-section{
+    display: flex;
+    margin: 10rem 20rem;
+}
+
+
+.left-section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    
+}
+
+.sub-heading{
+    font-size: 5rem;
+    width: 80%;
+}
+
+.sub-para{
+    font-size: 2.4rem;
+    width: 80%;
+    margin-top: 5rem;
+    line-height: 4rem;
+    color: #5E5F62;
+}
+
+
+.right-section{
+    width: 50%;
+
+}
+
+.right-img{
+    width:80%;
+    height: 60rem;
+    object-fit: cover;
+}
+
+.btn{
+    margin-top: 50px;
+    height: 5.2rem;
+    width: 16rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fdfefe;
+    background-color: #8bb7a2;
+    border: none;
+  }
+
+.reverse-section{
+    flex-direction: row-reverse;
+}
+
+
+/* CAREER SECTION ENDS */
+
+
+/* PEOPLE SECTION BEGINS */
+
+
+.creative-team{
+    margin: 10rem 20rem;
+    
+}
+
+.creative-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.creative-head h3{
+    width: 30%;
+    font-size: 5rem;
+}
+
+.creative-head p{
+    width: 35%;
+    font-size: 2rem;
+    line-height: 3.5rem;
+    color: #5E5F62;
+    margin-right: 22rem;
+}
+
+
+/* PEOPLE SECTION ENDS */
