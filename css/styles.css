@@ -12,27 +12,19 @@ html{
     font-size: 62.5%;
 }
 
-/* body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
 /* NAVBAR BEGINS */
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0rem;
+    padding: 2rem 8rem;
     height: auto;
     background-color: #636C79;
 }
 
 
-.logo{
-    margin-left: 10rem;
-}
+
 
 .logo>img{
     height: 4.5rem;
@@ -42,8 +34,8 @@ nav{
     display: flex;
     font-size: 1.8rem;
     align-items: center;
-    margin-right: 10rem;
 }
+
 
 .list{
     list-style-type: none;
@@ -75,7 +67,25 @@ nav{
 
 .burger{
     display: none;
+    flex-direction: column;
+    gap: 1rem;
+    border: 0.1rem solid transparent;
+    padding: 1.4rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
 }
+.burger:hover{
+    border: 0.1rem solid #fffefe;
+}
+
+.burger>div{
+    background-color: #fffefe;
+    height: 0.8rem;
+    width: 5rem;
+}
+
+
+
 
 /* NAVBAR ENDS */
 
@@ -99,6 +109,7 @@ nav{
     width:70%;
     border-radius: 1rem;
 }
+
 
 .right-section{
     width: 60%;
@@ -137,8 +148,7 @@ nav{
     color: #9c9d9f;
     height: 6rem;
     width: 50rem;
-    padding: 5px 0 5px 50px;
-    /* padding: 0.1rem 0.1rem 0.1rem 5rem; */
+    padding: 0.1rem 0.1rem 0.1rem 5rem;
     font-size: 2.1rem;
   }
   
@@ -256,17 +266,19 @@ nav{
 
 .right-section{
     width: 50%;
-
+    /* display: flex; */
+    
 }
 
 .right-img{
     width:80%;
     height: 60rem;
     object-fit: cover;
+    float: right;
 }
 
 .btn{
-    margin-top: 50px;
+    margin-top: 5rem;
     height: 5.2rem;
     width: 16rem;
     font-size: 2rem;
@@ -280,6 +292,10 @@ nav{
     flex-direction: row-reverse;
 }
 
+.right-align{
+    float: left;
+}
+
 
 /* CAREER SECTION ENDS */
 
@@ -289,12 +305,15 @@ nav{
 
 .creative-team{
     margin: 10rem 20rem;
+    display: flex;
+    flex-direction: column;
     
 }
 
 .creative-head{
     display: flex;
     justify-content: space-between;
+    margin: 5rem 0rem;
 }
 
 .creative-head h3{
@@ -310,5 +329,178 @@ nav{
     margin-right: 22rem;
 }
 
+.peoples{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
 
+
+.people-img{
+    width: 100%;
+}
+
+.card{
+    width: 26%;
+}
+
+.card h3{
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+.card p{
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+
+.see-more{
+    margin: 6rem auto;
+}
 /* PEOPLE SECTION ENDS */
+
+
+
+
+/* FOOTER SECTION BEGINS */
+.footer{
+    background-color: #10181D;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 20rem;
+
+}
+
+
+.footer-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.social-media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.social-media-icons div {
+    padding: 1.2rem 1.2rem;
+    background-color: #282f34;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+}
+
+.socials{
+    color: #c9cbcc;
+    font-size: 2rem;
+}
+
+.line {
+    border-bottom: 0.1rem solid #2e363b;
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list-heading{
+    margin-bottom: 2rem;
+}
+
+.footer-list-heading a{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer-list-item{
+    margin-bottom: 1.4rem;
+}
+
+.footer-list-item a{
+    color: #7a7e81;
+    font-size: 1.4rem;
+    font-weight: 600;
+    
+}
+
+
+/* FOOTER SECTION ENDS */
+
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width:1700px) {
+
+    html{
+        font-size: 45%;
+      }
+    
+
+}
+
+
+@media screen and (max-width:1250px) {
+
+    html{
+        font-size: 36%;
+      }
+
+}
+
+
+
+@media screen and (max-width:1000px) {
+
+    html{
+        font-size: 30%;
+    }
+
+    .burger{
+        display: flex;
+    }
+
+    .list{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+
+    html{
+        font-size: 22%;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+
+    html{
+        font-size: 26%;
+    }
+
+    .main-section{
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .main-image{
+        width: 100%;
+        height: auto;
+    }
+
+}
